@@ -12,22 +12,12 @@ class Card
     end
 end
 
+
+
 #Se crea el arreglo para obtener 5 cartas con las condiciones dadas.
 carta = []
 5.times do |i|
-    carta = carta.push(Card.new(rand(1..13),['C','T','D','E'].sample))
-    p carta 
+    carta = Card.new(rand(1..13),['C','T','D','E'].sample)
+    pp carta 
 end
-
-=begin
-
-No pude dejarlo de manera bonita :(
-
-5.times {|i| carta << Card.new(Random.rand(1..13),['C','T','D','E'].sample)}
-print carta
-=end
-
-
-
-
 
