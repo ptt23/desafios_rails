@@ -11,7 +11,8 @@ vp = gets.chomp.to_i
 
 class CuentaBancaria
 # Se crea Getter y Setter para nombre usuario
-    attr_accessor :nombre_usuario
+    attr_accessor :nombre_usuario, :numero_cuenta
+    attr_reader :vip
 # Se Crea constructor que recibe nombre_usuario y numero_cuenta , se deja cuenta vip por defecto como 0
     def initialize (nombre_usuario, numero_cuenta, vip = 0)
     #Se levanta un error en caso que número de cuenta sea distinto de 8
